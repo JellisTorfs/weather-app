@@ -4,7 +4,7 @@ const messageOne = document.querySelector('#firstP');
 const messageTwo = document.querySelector('#secondP');
 
 function getWeatherInfo(location) {
-    return fetch('http://localhost:3000/weather?address=' + location)
+    return fetch('/weather?address=' + location)
         .then((response) => {
             return response.json()
         });
